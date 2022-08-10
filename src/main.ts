@@ -22,49 +22,6 @@ WA.onInit().then(() => {
     WA.room.onLeaveLayer('infobordd/infozone2').subscribe(closePopUp)
     //СТЕНД 1
 
-    //СТЕНД 2
-    WA.room.onEnterLayer('infobordd/infozone2').subscribe(() => {
-        var mysound = WA.sound.loadSound("door/paper.mp3");
-        mysound.play(config);
-        const today = new Date();
-        const time = today.getHours() + ":" + today.getMinutes();
-        currentPopup = WA.ui.openPopup("infopop2","Добро пожаловать " + WA.player.name + "\nТекущее время: " + time + "\n\nРассписание:\n\n13:30 - Начало и Квест Ярика.\n14:00 - Выпускная речь Глеба.\n14:15 - Экзамен у Чубаси.....\n14:30 - Побег Жоры и Лабирит.\n15:00 - Секретный квест......\n15:30 - Викторина и Ребусы...\n16:00 - Музыкальная пауза....\n16:30 - Квиз по Фан видео....\n16:40 - Король и Королева....\n17:00 - Салют и завершение...",[]);
-    })
-    WA.room.onLeaveLayer('infobordd/infozone3').subscribe(closePopUp)
-    //СТЕНД 2
-
-    //СТЕНД 3
-    WA.room.onEnterLayer('infobordd/infozone3').subscribe(() => {
-        var mysound = WA.sound.loadSound("door/paper.mp3");
-        mysound.play(config);
-        const today = new Date();
-        const time = today.getHours() + ":" + today.getMinutes();
-        currentPopup = WA.ui.openPopup("infopop3","Добро пожаловать " + WA.player.name + "\nТекущее время: " + time + "\n\nРассписание:\n\n13:30 - Начало и Квест Ярика.\n14:00 - Выпускная речь Глеба.\n14:15 - Экзамен у Чубаси.....\n14:30 - Побег Жоры и Лабирит.\n15:00 - Секретный квест......\n15:30 - Викторина и Ребусы...\n16:00 - Музыкальная пауза....\n16:30 - Квиз по Фан видео....\n16:40 - Король и Королева....\n17:00 - Салют и завершение...",[]);
-    })
-    WA.room.onLeaveLayer('infobordd/infozone4').subscribe(closePopUp)
-    //СТЕНД 3
-
-    //СТЕНД 4
-    WA.room.onEnterLayer('infobordd/infozone4').subscribe(() => {
-        var mysound = WA.sound.loadSound("door/paper.mp3");
-        mysound.play(config);
-        const today = new Date();
-        const time = today.getHours() + ":" + today.getMinutes();
-        currentPopup = WA.ui.openPopup("infopop4","Добро пожаловать " + WA.player.name + "\nТекущее время: " + time + "\n\nРассписание:\n\n13:30 - Начало и Квест Ярика.\n14:00 - Выпускная речь Глеба.\n14:15 - Экзамен у Чубаси.....\n14:30 - Побег Жоры и Лабирит.\n15:00 - Секретный квест......\n15:30 - Викторина и Ребусы...\n16:00 - Музыкальная пауза....\n16:30 - Квиз по Фан видео....\n16:40 - Король и Королева....\n17:00 - Салют и завершение...",[]);
-    })
-    WA.room.onLeaveLayer('infobordd/infozone5').subscribe(closePopUp)
-    //СТЕНД 4
-
-    //СТЕНД 5
-    WA.room.onEnterLayer('infobordd/infozone5').subscribe(() => {
-        var mysound = WA.sound.loadSound("door/paper.mp3");
-        mysound.play(config);
-        const today = new Date();
-        const time = today.getHours() + ":" + today.getMinutes();
-        currentPopup = WA.ui.openPopup("infopop5","Добро пожаловать " + WA.player.name + "\nТекущее время: " + time + "\n\nРассписание:\n\n13:30 - Начало и Квест Ярика.\n14:00 - Выпускная речь Глеба.\n14:15 - Экзамен у Чубаси.....\n14:30 - Побег Жоры и Лабирит.\n15:00 - Секретный квест......\n15:30 - Викторина и Ребусы...\n16:00 - Музыкальная пауза....\n16:30 - Квиз по Фан видео....\n16:40 - Король и Королева....\n17:00 - Салют и завершение...",[]);
-    })
-    WA.room.onLeaveLayer('infobordd/infozone1').subscribe(closePopUp)
-    //СТЕНД 5
 
     //НПС ЯРИК
     WA.room.onEnterLayer('npc/npc1zone').subscribe(() => {
