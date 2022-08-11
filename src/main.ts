@@ -19,7 +19,7 @@ WA.onInit().then(() => {
         const time = today.getHours() + ":" + today.getMinutes();
         currentPopup = WA.ui.openPopup("infopop1","Добро пожаловать " + WA.player.name + "\nТекущее время: " + time + "\n\nРассписание:\n\n13:30 - Начало и Квест Ярика.\n14:00 - Выпускная речь Глеба.\n14:15 - Экзамен у Чубаси.....\n14:30 - Побег Жоры и Лабирит.\n15:00 - Секретный квест......\n15:30 - Викторина и Ребусы...\n16:00 - Музыкальная пауза....\n16:30 - Квиз по Фан видео....\n16:40 - Король и Королева....\n17:00 - Салют и завершение...",[]);
     })
-    WA.room.onLeaveLayer('infobordd/infozone2').subscribe(closePopUp)
+    WA.room.onLeaveLayer('infobordd/infozone1').subscribe(closePopUp)
     //СТЕНД 1
 
 
@@ -52,12 +52,12 @@ WA.onInit().then(() => {
 
     //НПС КОЗА
     WA.room.onEnterLayer('npc/npc2zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("npc2pop","5 необычных мест найди, записки с кодом собери.",[]);
+        currentPopup = WA.ui.openPopup("npc2pop","Найди 5 странных вещей в метавселенной ЧУБАХАУЗ и собери записки с кодом.",[]);
         var mysound = WA.sound.loadSound("npc/koza.mp3");
         mysound.play(config);
     })
     WA.room.onLeaveLayer('npc/npc2zone').subscribe(closePopUp)
-    //НПС КОЗА  
+    //НПС КОЗА  а
     
     //ЯРИК-БАКЛАЖАНЫ
     WA.room.onEnterLayer("YQuest/Y1").subscribe(() => {
@@ -66,12 +66,12 @@ WA.onInit().then(() => {
         var triggerMessage = WA.ui.displayActionMessage({
             message: "нажми ПРОБЕЛ чтобы раздвинуть ветви",
             callback: () => {
-                WA.chat.sendChatMessage("Среди ветвей вы находите записку на которой указана часть кода от холодильника 1****", "КВЕСТ ЯРИКА")
+                WA.chat.sendChatMessage("Среди ветвей вы находите записку на которой указана часть кода от холодильника 3****", "КВЕСТ ЯРИКА")
             }
         });
         setTimeout(() => {
             triggerMessage.remove();
-        }, 2000)
+        }, 4000)
     });
     //ЯРИК-БАКЛАЖАНЫ
     
@@ -82,12 +82,12 @@ WA.onInit().then(() => {
         var triggerMessage = WA.ui.displayActionMessage({
             message: "нажми ПРОБЕЛ чтобы поймать акулу",
             callback: () => {
-                WA.chat.sendChatMessage("К хвосту акулу привязана саписка на которой указана часть кода от холодильника *2***", "КВЕСТ ЯРИКА")
+                WA.chat.sendChatMessage("К хвосту акулу привязана саписка на которой указана часть кода от холодильника *6***", "КВЕСТ ЯРИКА")
             }
         });
         setTimeout(() => {
             triggerMessage.remove();
-        }, 2000)
+        }, 4000)
     });
     //ЯРИК-АКУЛА
     
@@ -98,12 +98,12 @@ WA.onInit().then(() => {
         var triggerMessage = WA.ui.displayActionMessage({
             message: "нажми ПРОБЕЛ чтобы сорвать персик",
             callback: () => {
-                WA.chat.sendChatMessage("К персику примотана записка на которой указана часть кода от холодильника **3**", "КВЕСТ ЯРИКА")
+                WA.chat.sendChatMessage("К персику примотана записка на которой указана часть кода от холодильника **7**", "КВЕСТ ЯРИКА")
             }
         });
         setTimeout(() => {
             triggerMessage.remove();
-        }, 2000)
+        }, 4000)
     });
     //ЯРИК-ПЕРСИК
     
@@ -114,12 +114,12 @@ WA.onInit().then(() => {
         var triggerMessage = WA.ui.displayActionMessage({
             message: "нажми ПРОБЕЛ чтобы поднять плитку",
             callback: () => {
-                WA.chat.sendChatMessage("Под плиткой спрятана записка на которой указана часть кода от холодильника ***8*", "КВЕСТ ЯРИКА")
+                WA.chat.sendChatMessage("Под плиткой спрятана записка на которой указана часть кода от холодильника ***3*", "КВЕСТ ЯРИКА")
             }
         });
         setTimeout(() => {
             triggerMessage.remove();
-        }, 2000)
+        }, 4000)
     });
     //ЯРИК-ПЛИТКА
     
@@ -130,19 +130,19 @@ WA.onInit().then(() => {
         var triggerMessage = WA.ui.displayActionMessage({
             message: "нажми ПРОБЕЛ чтобы сорвать записку",
             callback: () => {
-                WA.chat.sendChatMessage("К корме прибита записка на которой указана часть кода от холодильника ****5", "КВЕСТ ЯРИКА")
+                WA.chat.sendChatMessage("К корме прибита записка на которой указана часть кода от холодильника ****1", "КВЕСТ ЯРИКА")
             }
         });
         setTimeout(() => {
             triggerMessage.remove();
-        }, 2000)
+        }, 4000)
     });
     //ЯРИК-ЛОДКА
     
     //ЖОРА ПУСТО
     WA.room.onEnterLayer("YQuest/J0").subscribe(() => {
         var triggerMessage = WA.ui.displayActionMessage({
-            message: "нажми ПРОБЕЛ осмотрется",
+            message: "нажми ПРОБЕЛ осмотреться",
             callback: () => {
                 WA.chat.sendChatMessage("Вы ничего не находите", "КВЕСТ ЖОРЫ")
                 var mysound = WA.sound.loadSound("door/list.mp3");
@@ -158,16 +158,16 @@ WA.onInit().then(() => {
     //ЖОРА 1
     WA.room.onEnterLayer("YQuest/J1").subscribe(() => {
         var triggerMessage = WA.ui.displayActionMessage({
-            message: "нажми ПРОБЕЛ осмотрется",
+            message: "нажми ПРОБЕЛ осмотреться",
             callback: () => {
-                WA.chat.sendChatMessage("В листве вы находите записку с частью кода 1***", "КВЕСТ ЖОРЫ")
+                WA.chat.sendChatMessage("В листве вы находите записку с частью кода 3***", "КВЕСТ ЖОРЫ")
                 var mysound = WA.sound.loadSound("door/list.mp3");
                 mysound.play(config);
             }
         });
         setTimeout(() => {
             triggerMessage.remove();
-        }, 2000)
+        }, 4000)
     });
     //ЖОРА  1    
 
@@ -183,39 +183,39 @@ WA.onInit().then(() => {
         });
         setTimeout(() => {
             triggerMessage.remove();
-        }, 2000)
+        }, 4000)
     });
     //ЖОРА  2
     
     //ЖОРА 3
     WA.room.onEnterLayer("YQuest/J3").subscribe(() => {
         var triggerMessage = WA.ui.displayActionMessage({
-            message: "нажми ПРОБЕЛ осмотрется",
+            message: "нажми ПРОБЕЛ осмотреться",
             callback: () => {
-                WA.chat.sendChatMessage("В листве вы находите записку с частью кода **3*", "КВЕСТ ЖОРЫ")
+                WA.chat.sendChatMessage("В листве вы находите записку с частью кода **7*", "КВЕСТ ЖОРЫ")
                 var mysound = WA.sound.loadSound("door/list.mp3");
                 mysound.play(config);
             }
         });
         setTimeout(() => {
             triggerMessage.remove();
-        }, 2000)
+        }, 4000)
     });
     //ЖОРА  3
     
     //ЖОРА 4
     WA.room.onEnterLayer("YQuest/J4").subscribe(() => {
         var triggerMessage = WA.ui.displayActionMessage({
-            message: "нажми ПРОБЕЛ осмотрется",
+            message: "нажми ПРОБЕЛ осмотреться",
             callback: () => {
-                WA.chat.sendChatMessage("В листве вы находите записку с частью кода ***4", "КВЕСТ ЖОРЫ")
+                WA.chat.sendChatMessage("В листве вы находите записку с частью кода ***5", "КВЕСТ ЖОРЫ")
                 var mysound = WA.sound.loadSound("door/list.mp3");
                 mysound.play(config);
             }
         });
         setTimeout(() => {
             triggerMessage.remove();
-        }, 2000)
+        }, 4000)
     });
     //ЖОРА  4
     
