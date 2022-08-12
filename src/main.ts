@@ -17,7 +17,7 @@ WA.onInit().then(() => {
         mysound.play(config);    
         const today = new Date();
         const time = today.getHours() + ":" + today.getMinutes();
-        currentPopup = WA.ui.openPopup("infopop1","Добро пожаловать " + WA.player.name + "\nТекущее время: " + time + "\n\nРассписание:\n\n13:30 - Начало и Квест Ярика.\n14:00 - Выпускная речь Глеба.\n14:15 - Экзамен у Чубаси.....\n14:30 - Побег Жоры и Лабирит.\n15:00 - Секретный квест......\n15:30 - Викторина и Ребусы...\n16:00 - Музыкальная пауза....\n16:30 - Квиз по Фан видео....\n16:40 - Король и Королева....\n17:00 - Салют и завершение...",[]);
+        currentPopup = WA.ui.openPopup("infopop1","Добро пожаловать " + WA.player.name + "\nТекущее время: " + time + "\n\nРассписание:\n\n18:30 - Начало и Квест Ярика..\n19:00 - Выпускная речь Глеба..\n19:10 - Экзамен у Чубаси......\n19:30 - Лабиринт тетушки Фаи..\n20:00 - Дерзкий побег Жоры....\n20:10 - Секретный квест.......\n20:40 - Спортивная викторина..\n20:50 - Брейн Ринг............\n21:20 - Музыкальная пауза.....\n16:30 - Квиз по Фан видео.....\n21:35 - Король&Королева вечера\n",[]);
     })
     WA.room.onLeaveLayer('infobordd/infozone1').subscribe(closePopUp)
     //СТЕНД 1
@@ -248,7 +248,7 @@ WA.onInit().then(() => {
     
     //НПС ЛАБ 1
     WA.room.onEnterLayer('npc/npc8zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("npc8pop","ТРЕТЬЯ ЦИФРА ДВА",[]);
+        currentPopup = WA.ui.openPopup("npc8pop","ТРЕТЬЯ ЦИФРА ОДИН",[]);
         var mysound = WA.sound.loadSound("npc/kwa.mp3");
         mysound.play(config);
     })
@@ -275,7 +275,7 @@ WA.onInit().then(() => {
 
     //НПС ЛАБ 4
     WA.room.onEnterLayer('npc/npc11zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("npc11pop","ЧЕТВЕРТАЯ  ЦИФРА ТРИ.",[]);
+        currentPopup = WA.ui.openPopup("npc11pop","ЧЕТВЕРТАЯ  ЦИФРА ШЕСТЬ.",[]);
         var mysound = WA.sound.loadSound("npc/spider.mp3");
         mysound.play(config);
     })
@@ -298,7 +298,34 @@ WA.onInit().then(() => {
         mysound.play(config);
     })
     WA.room.onLeaveLayer('npc/npc13zone').subscribe(closePopUp)
-    //НПС ВУДОН      
+    //НПС ВУДОН
+    
+    //ХАСКИ 1
+    WA.room.onEnterLayer('npc/h1zone').subscribe(() => {
+        currentPopup = WA.ui.openPopup("h1pop","Фая Фаюшка моя - да прости ты дурака! Я в фьючах совсем не сплю, по будильнику живу! Но помочь к тебе приду,  И кортошку ПОСОДЮ!",[]);
+        var mysound = WA.sound.loadSound("door/magic.mp3");
+        mysound.play(config);
+    })
+    WA.room.onLeaveLayer('npc/h1zone').subscribe(closePopUp)
+    //ХАСКИ 1
+    
+    //ХАСКИ 2
+    WA.room.onEnterLayer('npc/h2zone').subscribe(() => {
+        currentPopup = WA.ui.openPopup("h2pop","Баклажанычь он такой! И арбузик, помидор Все ПОСОДИТ, все польет! Только вот его беда Не увидит нифига! Там за грядками уже стоит Саша так почти два дня!",[]);
+        var mysound = WA.sound.loadSound("door/magic.mp3");
+        mysound.play(config);
+    })
+    WA.room.onLeaveLayer('npc/h2zone').subscribe(closePopUp)
+    //ХАСКИ 2  
+    
+    //ХАСКИ 3
+    WA.room.onEnterLayer('npc/h3zone').subscribe(() => {
+        currentPopup = WA.ui.openPopup("h3pop","Саши как видишь тут нет - но что то мне подсказывает что стоит глянуть в реальном мире! Приходи на сцену - и включай телефон с камерой - глянем как найдешь Сашу!",[]);
+        var mysound = WA.sound.loadSound("door/magic.mp3");
+        mysound.play(config);
+    })
+    WA.room.onLeaveLayer('npc/h3zone').subscribe(closePopUp)
+    //ХАСКИ 3       
 
     // Подсключение API Extra
     bootstrapExtra().then(() => {
