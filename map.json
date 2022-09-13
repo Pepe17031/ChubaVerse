@@ -560,6 +560,7 @@
         {
          "draworder":"topdown",
          "id":2,
+         "locked":true,
          "name":"floorLayer",
          "objects":[
                 {
@@ -642,7 +643,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -875,7 +876,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"https:\/\/www.google.com\/"
+                         "value":"http:\/\/project6062228.tilda.ws\/"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -902,7 +903,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"https:\/\/www.google.com\/"
+                         "value":"http:\/\/chubapsy.tilda.ws\/test"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -988,7 +989,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
