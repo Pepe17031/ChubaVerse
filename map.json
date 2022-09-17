@@ -876,7 +876,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"http:\/\/project6062228.tilda.ws\/"
+                         "value":"https:\/\/docs.google.com\/document\/d\/1qU8ASncr29R3CRdHg0ka1tkiFIgsIMmnypl4u5B4vpc\/edit?usp=sharing"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -903,7 +903,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"http:\/\/chubapsy.tilda.ws\/test"
+                         "value":"https:\/\/docs.google.com\/document\/d\/1DZpgE21U0MteM94FCigwxiavPGeh7ru_-GPhaYY0csE\/edit?usp=sharing"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
