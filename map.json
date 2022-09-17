@@ -1898,7 +1898,7 @@
                 {
                  "name":"code",
                  "type":"string",
-                 "value":"1234"
+                 "value":"898152"
                 }, 
                 {
                  "name":"doorVariable",
@@ -1906,7 +1906,7 @@
                  "value":"psy"
                 }],
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":220,
          "x":0,
          "y":0
