@@ -1906,7 +1906,7 @@
                  "value":"psy"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":220,
          "x":0,
          "y":0
