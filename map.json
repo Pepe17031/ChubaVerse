@@ -1796,7 +1796,6 @@
         {
          "draworder":"topdown",
          "id":175,
-         "locked":true,
          "name":"jitsi",
          "objects":[
                 {
@@ -1804,6 +1803,11 @@
                  "id":109,
                  "name":"Jitsi2",
                  "properties":[
+                        {
+                         "name":"jitsiConfig",
+                         "type":"string",
+                         "value":"{ \"startWithAudioMuted\": true }"
+                        }, 
                         {
                          "name":"jitsiRoom",
                          "type":"string",
@@ -1845,7 +1849,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
